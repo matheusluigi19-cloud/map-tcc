@@ -146,7 +146,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <section id="g3">
 <div class="sec-head"><h2>Certificações por tipo</h2><em>120 certificações</em></div>
 <div class="grid2"><div class="panel"><div class="cv h-md"><canvas id="c4"></canvas></div></div><div class="panel"><div class="cv h-md"><canvas id="c5"></canvas></div></div></div>
-<p class="note">A Certificação Sustentável de Salvador responde por 88 das 120 certificações, o que concentra a análise conjunta em um único instrumento. Por isso, o segundo gráfico apresenta apenas as certificações voluntárias. Nele, a ENCE aparece com 20 registros, dos quais 16 pertencem ao mesmo complexo empresarial, o Hangar Business Park.</p>
+<p class="note">A Certificação Sustentável de Salvador, de adesão voluntária como as demais, responde por 88 das 120 certificações, o que concentra a análise conjunta em um único instrumento. Por isso, o segundo gráfico apresenta apenas as demais certificações, conduzidas por programas federais e entidades certificadoras. Nele, a ENCE aparece com 20 registros, dos quais 16 pertencem ao mesmo complexo empresarial, o Hangar Business Park.</p>
 </section>
 <section id="g4">
 <div class="sec-head"><h2>Emissões por ano</h2><em>2011 a 2026</em></div>
@@ -246,7 +246,7 @@ new Chart(document.getElementById('c6'),{type:'bar',
   data:{labels:anos,datasets:[
     {label:'Certificação Sustentável de Salvador',data:anos.map(a=>(D.emissao_ano_esq['Municipal']||{})[a]||0),
      backgroundColor:C.azul,borderWidth:0},
-    {label:'Certificações voluntárias',data:anos.map(a=>(D.emissao_ano_esq['Voluntárias']||{})[a]||0),
+    {label:'Demais certificações',data:anos.map(a=>(D.emissao_ano_esq['Voluntárias']||{})[a]||0),
      backgroundColor:C.coral,borderWidth:0}]},
   options:{plugins:{legend:{position:'bottom'}},
     scales:{x:{stacked:true,grid:noGrid,border:{color:C.line}},

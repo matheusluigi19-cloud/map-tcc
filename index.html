@@ -154,6 +154,11 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <div class="grid2"><div class="panel"><div class="cv h-md"><canvas id="c2"></canvas></div></div><div class="panel"><div class="cv h-md"><canvas id="c3"></canvas></div></div></div>
 <p class="note">O setor residencial predomina, com 70 das 98 edificações, resultado da inclusão do IPTU Verde no recorte. O setor público aparece uma única vez, na sede do Banco Central do Brasil, localizada no CAB. Entre as tipologias, escritório é a segunda mais frequente, com número bem inferior ao do residencial multifamiliar.</p>
 </section>
+<section id="g2b">
+<div class="sec-head"><h2>Certificações por setor</h2><em>120 certificações</em></div>
+<div class="panel"><div class="cv h-md"><canvas id="c19"></canvas></div></div>
+<p class="note">A contagem considera cada certificação, e não cada edificação. O IPTU Verde responde por 69 das 72 certificações do setor residencial, enquanto a ENCE e o LEED somam 27 das 47 certificações do setor comercial. O único registro do setor público é o LEED da sede do Banco Central do Brasil.</p>
+</section>
 <section id="g3">
 <div class="sec-head"><h2>Certificações por tipo</h2><em>120 certificações</em></div>
 <div class="grid2"><div class="panel"><div class="cv h-md"><canvas id="c4"></canvas></div></div><div class="panel"><div class="cv h-md"><canvas id="c5"></canvas></div></div></div>
@@ -268,6 +273,15 @@ donut('c9',D.nivel_mun,[C.prata,C.ouro,C.bronze],'Nível concedido');
 donut('c10',D.nivel_mun,[C.prata,C.ouro,C.bronze],'IPTU Verde');
 donut('c11',Object.fromEntries(D.nivel_ence),[C.azul,C.azulc],'ENCE');
 donut('c12',D.nivel_leed,[C.ouro,C.prata],'LEED');
+
+const CS={setores:['Residencial','Comercial','Público'],tipos:[
+  ['IPTU Verde',[69,19,0],C.azul],['ENCE',[0,20,0],C.coral],['LEED',[0,7,1],C.ouro],
+  ['AQUA-HQE',[1,1,0],C.verde],['Selo Casa Azul',[2,0,0],C.prata]]};
+new Chart(document.getElementById('c19'),{type:'bar',
+  data:{labels:CS.setores,datasets:CS.tipos.map(([l,d,c])=>({label:l,data:d,backgroundColor:c,borderWidth:0}))},
+  options:{indexAxis:'y',maintainAspectRatio:false,plugins:{legend:{position:'bottom'}},
+    scales:{x:{stacked:true,grid:grid,border:{display:false},ticks:{precision:0}},
+            y:{stacked:true,grid:noGrid,border:{color:C.line}}}}});
 
 const bs=D.bairro_setor;
 const setores=['Residencial','Comercial','Público'];

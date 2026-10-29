@@ -119,6 +119,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <header class="top">
 <h1>Características das Edificações Certificadas em Salvador</h1>
 <p class="sub">Um mapa e doze análises do banco de dados de edificações com certificação ambiental ou de eficiência energética vigente no município e do conjunto que ainda está em processo de emissão.</p>
+<p class="sub" style="margin-top:8px">Dados das bases do INMETRO, GBC Brasil, Fundação Vanzolini, Caixa Econômica Federal, SECIS e SEDUR.</p>
 <div class="counts">
 <div class="count"><b>98</b><span>edificações certificadas</span></div>
 <div class="count"><b>120</b><span>certificações vigentes</span></div>
@@ -137,7 +138,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
     <h3>Colorir por</h3>
     <div class="seg"><button id="m-esq" aria-pressed="true">Certificação principal</button><button id="m-set" aria-pressed="false">Setor</button></div>
     <div class="leg" id="leg"></div>
-    <p class="mnote">Anel em volta do ponto: edificação com mais de uma certificação. Ponto translúcido: localização aproximada, pelo trecho da rua ou pelo centro do bairro. Clique na legenda para mostrar ou ocultar uma categoria.</p>
+    <p class="mnote">Anel em volta do ponto: edificação com mais de uma certificação. Ponto translúcido: localização aproximada, pelo trecho da rua ou pelo centro do bairro; a diferença de tom indica apenas a precisão da localização. Em “Certificação principal”, a edificação com mais de um selo recebe a cor da certificação não municipal. Clique na legenda para mostrar ou ocultar uma categoria.</p>
     </div>
   </div>
 </div>
@@ -156,12 +157,12 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <section id="g3">
 <div class="sec-head"><h2>Certificações por tipo</h2><em>120 certificações</em></div>
 <div class="grid2"><div class="panel"><div class="cv h-md"><canvas id="c4"></canvas></div></div><div class="panel"><div class="cv h-md"><canvas id="c5"></canvas></div></div></div>
-<p class="note">O IPTU Verde, de adesão voluntária como as demais certificações, responde por 88 das 120 certificações, o que concentra a análise conjunta em um único instrumento. Por isso, o segundo gráfico apresenta apenas as demais certificações, conduzidas por programas federais e entidades certificadoras. Nele, a ENCE aparece com 20 registros, dos quais 16 pertencem ao mesmo complexo empresarial, o Hangar Business Park.</p>
+<p class="note">O IPTU Verde, de adesão opcional conforme o Decreto nº 36.288/2022, assim como as demais certificações, responde por 88 das 120 certificações, o que concentra a análise conjunta em um único instrumento. Por isso, o segundo gráfico apresenta apenas as demais certificações, conduzidas por programas federais e entidades certificadoras. Nele, a ENCE aparece com 20 registros, dos quais 16 pertencem ao mesmo complexo empresarial, o Hangar Business Park. Isso ocorre porque o PBE Edifica permite etiquetar separadamente a envoltória e partes da edificação: cada um dos sete edifícios de escritórios do complexo recebeu uma ENCE para a envoltória e outra para o lobby.</p>
 </section>
 <section id="g4">
 <div class="sec-head"><h2>Emissões por ano</h2><em>2011 a 2026</em></div>
 <div class="panel"><div class="cv h-lg"><canvas id="c6"></canvas></div></div>
-<p class="note">Mais de dois terços das certificações do banco foram emitidas de 2024 em diante. Parte desse comportamento decorre das regras de validade: o IPTU Verde vence em três ou cinco anos, e as certificações expiradas ficaram fora do recorte, enquanto a ENCE e o LEED não expiram e, por isso, respondem sozinhos pelos anos anteriores a 2020.</p>
+<p class="note">Mais de dois terços das certificações do banco foram emitidas de 2024 em diante. Parte desse comportamento decorre das regras de validade: o IPTU Verde vence em três ou cinco anos, e as certificações expiradas ficaram fora do recorte, enquanto a ENCE da edificação construída, o LEED e o AQUA-HQE não expiram e, por isso, respondem pelos registros anteriores a 2020.</p>
 </section>
 <section id="g5">
 <div class="sec-head"><h2>Vencimento do IPTU Verde</h2><em>2026 a 2031</em></div>
@@ -176,7 +177,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <section id="g7">
 <div class="sec-head"><h2>Escalas de classificação</h2><em>Escalas próprias de cada certificação</em></div>
 <div class="grid3"><div class="panel"><div class="cv h-sm"><canvas id="c10"></canvas></div></div><div class="panel"><div class="cv h-sm"><canvas id="c11"></canvas></div></div><div class="panel"><div class="cv h-sm"><canvas id="c12"></canvas></div></div></div>
-<p class="note">As escalas não são comparáveis entre si e, por isso, aparecem separadas. Destaca-se que todas as ENCEs de Salvador registradas no banco são de nível A, o mais alto da escala, e que nenhuma certificação LEED alcançou o nível Platinum.</p>
+<p class="note">As escalas não são comparáveis entre si e, por isso, aparecem separadas. Destaca-se que todas as ENCEs de Salvador registradas no banco são de nível A, o mais alto da escala, e que nenhuma certificação LEED alcançou o nível Platinum, o mais alto dessa certificação.</p>
 </section>
 <section id="g8">
 <div class="sec-head"><h2>Setor dentro de cada bairro</h2><em>Todos os bairros</em></div>
@@ -196,7 +197,7 @@ footer{margin-top:72px;padding-top:22px;border-top:1px solid var(--line);
 <section id="g11">
 <div class="sec-head"><h2>Selo Casa Azul: projeto homologado e certificação concedida</h2><em>21 empreendimentos</em></div>
 <div class="grid3"><div class="panel"><div class="cv h-sm"><canvas id="c16"></canvas></div></div><div class="panel"><div class="cv h-sm"><canvas id="c17"></canvas></div></div><div class="panel"><div class="cv h-sm"><canvas id="c18"></canvas></div></div></div>
-<p class="note">Dos 21 empreendimentos do Selo Casa Azul em Salvador, 19 estão na modalidade Projetar, que homologa o projeto, e não a edificação construída. O resultado indica uma distância entre a adesão inicial ao selo e a certificação efetiva dos empreendimentos habitacionais.</p>
+<p class="note">Dos 21 empreendimentos do Selo Casa Azul em Salvador, 19 estão na modalidade Projetar, que homologa o projeto, e não a edificação construída. O resultado indica uma distância entre a adesão inicial ao selo e a certificação efetiva dos empreendimentos habitacionais. Como as homologações foram concedidas entre 2023 e 2026, parte desses empreendimentos ainda pode estar em obra.</p>
 </section>
 <footer>Banco de dados do trabalho de conclusão de curso sobre edificações certificadas
 em Salvador. Consulta às bases em setembro de 2026. Certificações consideradas: PBE Edifica/ENCE,
@@ -352,7 +353,8 @@ map.on("click","pontos",e=>{const p=e.features[0].properties;
   const certs=String(p.certificacoes).split("\n").map(l=>{const [esq,tip,niv,emi,val]=l.split(" | ");const [k,t]=sit((val||"").replace("validade ",""));
     return`<div class="c" style="--c:${SCOL[esq]||"#999"}"><b>${esc(esq)}</b>${esc(tip)}<br>${esc((niv||"").charAt(0).toUpperCase()+(niv||"").slice(1))} · ${esc(emi)} · ${esc(val)}<br><span class="tag ${k}">${t}</span></div>`}).join("");
   const af=p.ponto_afastado===true||p.ponto_afastado==="true";
-  new mapboxgl.Popup({offset:10,maxWidth:"320px"}).setLngLat(e.features[0].geometry.coordinates).setHTML(
+  const auto=window.matchMedia("(min-width:861px)").matches&&!mp.classList.contains("min");if(auto){mp.classList.add("min");mt.textContent="Mostrar";mt.setAttribute("aria-expanded","false")}
+  const pop=new mapboxgl.Popup({offset:10,maxWidth:"320px"});pop.on("close",()=>{if(auto&&mp.classList.contains("min")){mp.classList.remove("min");mt.textContent="Minimizar";mt.setAttribute("aria-expanded","true")}});pop.setLngLat(e.features[0].geometry.coordinates).setHTML(
     `<div class="pop"><div class="id">${esc(p.id)}</div><h4>${esc(p.nome)}</h4><dl><dt>Endereço</dt><dd>${esc(p.endereco)}</dd><dt>Bairro</dt><dd>${esc(p.bairro)}</dd><dt>Setor</dt><dd>${esc(p.setor)} · ${esc(p.tipologia)}</dd><dt>Local</dt><dd>${esc(p.precisao_local)}${af?" (afastado de outro ponto no mesmo endereço)":""}</dd></dl>${certs}</div>`).addTo(map)});
 map.on("mouseenter","pontos",()=>map.getCanvas().style.cursor="pointer");
 map.on("mouseleave","pontos",()=>map.getCanvas().style.cursor="");
